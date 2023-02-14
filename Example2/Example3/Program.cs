@@ -5,7 +5,7 @@ if (a%2==0)
     {
         Console.WriteLine("Число " + a + " четное");
     }
-if (a%2==1)
+else
     {
         Console.WriteLine("Число " + a + " не четное");
     }                                                 

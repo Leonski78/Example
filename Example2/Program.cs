@@ -1,9 +1,9 @@
 ﻿// Максимальное из трех введенных чисел
-Console.WriteLine("Enter number 1 ");
+Console.WriteLine("Введите первое число ");
 int a = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Enter number 2 ");
+Console.WriteLine("Введите второе число ");
 int b = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Enter number 3 ");
+Console.WriteLine("Введите третье число ");
 int c = int.Parse(Console.ReadLine()!);
 int max = a;
 if(b>a)
@@ -14,4 +14,4 @@ if(c>b)
 {
     max=c;
 }
-Console.WriteLine("Maximum = " + max);
+Console.WriteLine("Максимальное из трех: " + max);

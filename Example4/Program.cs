@@ -1,12 +1,7 @@
-﻿// Вывести четные числа от 1 до N
-Console.WriteLine("Введите целое число: ");
+﻿// программа, которая принимает на вход трёхзначное число и на выходе 
+// показывает вторую цифру этого числа
+Console.Clear();
+Console.WriteLine("Введите трехзначное число: ");
 int N = int.Parse(Console.ReadLine());
-Console.WriteLine("Четные числа до " + N + ":");
-for (int i=1; i<N; i++)
-{
-    if(i%2==0)
-    {
-        Console.Write(i + ", ");
-    }
-
-}  
+int Second = (N % 100 - N % 10)/10;
+Console.WriteLine($"Вторая цифра числа{N} -> {Second}");
