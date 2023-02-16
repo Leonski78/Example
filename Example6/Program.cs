@@ -2,14 +2,19 @@
 Console.Clear();
 Console.WriteLine("Введите число: ");
 int N = int.Parse(Console.ReadLine()!);
-int Third = int.Parse(Console.ReadLine()!);
+// int Third = int.Parse(Console.ReadLine()!);
 if (N<100)
 {
 Console.WriteLine("Третьей цифры нет");
 }
-while (N>999)
+if (N>99 && N<1000)
     {
-        Third = N/10;
+        N = N % 10;
     }
-    Third = Third % 10;
-Console.WriteLine("Третья цифра: " + Third);
+else if (N>999)
+{
+    N = N / 10 % 10;
+}  
+return
+// Third = Third % 10;
+Console.WriteLine("Третья цифра: " + N);
