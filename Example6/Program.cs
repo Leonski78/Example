@@ -6,15 +6,14 @@ int N = int.Parse(Console.ReadLine()!);
 if (N<100)
 {
 Console.WriteLine("Третьей цифры нет");
+// break;
 }
 if (N>99 && N<1000)
     {
         N = N % 10;
     }
-else if (N>999)
+if (N>999)
 {
     N = N / 10 % 10;
 }  
-return
-// Third = Third % 10;
 Console.WriteLine("Третья цифра: " + N);
