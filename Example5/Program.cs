@@ -3,5 +3,5 @@
 Console.Clear();
 Console.WriteLine("Введите трехзначное число: ");
 int N = int.Parse(Console.ReadLine());
-int Second = (N % 100 - N % 10)/10;
-Console.WriteLine($"Вторая цифра числа{N} -> {Second}");
+int Second = N / 10 % 10;
+Console.WriteLine($"Вторая цифра числа {N} -> {Second}");
