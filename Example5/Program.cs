@@ -3,5 +3,11 @@
 Console.Clear();
 Console.WriteLine("Введите трехзначное число: ");
 int N = int.Parse(Console.ReadLine());
-int Second = N / 10 % 10;
+if (N<100 || N>999)
+{
+    Console.Write($"{N} не трехзначное число");
+}
+else 
+{int Second = N / 10 % 10;
 Console.WriteLine($"Вторая цифра числа {N} -> {Second}");
+}
