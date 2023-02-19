@@ -13,11 +13,12 @@ Console.Write($"{number} -> ");
 
 while (count <= number)
 {
-    Console.Write(Math.Pow(count,2));
-    if (count!=number)
-    {
-        Console.Write(", ");
-    }
+   Console.Write($"{Math.Pow(count,2)}"+((count != number) ? ", " : "").ToString());
+    //Console.Write(Math.Pow(count,2));
+    //if (count!=number)
+    //{
+     //   Console.Write(", ");
+   // }
     count ++;
 }
 // Console.Write($"{Math.Pow(count,2)}"+((count != n) ? ", " : "").ToString());
