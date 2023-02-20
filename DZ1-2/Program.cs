@@ -10,13 +10,13 @@ Console.WriteLine("Введите пятизначное число N: ");
 int N = int.Parse(Console.ReadLine()!);
 int Temp = N;
 int rev = 0;
-while (N>0)
+while (Temp>0)
 {
-    int dig = N % 10;
+    int dig = Temp % 10;
     rev = rev * 10 + dig;
-    N = N/10;
+    Temp = Temp/10;
 }
-if (Temp == rev)
+if (N == rev)
 {
     Console.WriteLine("Это палиндром !");
 }
